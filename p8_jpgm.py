@@ -9,7 +9,7 @@ nav=st.sidebar.radio("Navigation",["Members","Registration"])
 #     st.write("Welcome.....")
 if nav=="Members":
     st.header("Jalpaiguri Mariners")
-    showdata= pd.read_csv("F:/Study/Data Sci/Small Project//members.csv")
+    showdata= pd.read_csv("members.csv")
     sd=st.radio("Show Data",["Show","Hide"])
     if sd=="Hide":
         st.write("")
@@ -45,6 +45,6 @@ elif nav=="Registration":
             to_add={"First":[first],"Last":[last],"Email":[email],"Mobile":[mob],"DOB":[dob],
             "Blood":[blood],"Occupation":[occ],"Address":[add]}
             to_add=pd.DataFrame(to_add)
-            to_add.to_csv("F:/Study/Data Sci/Small Project//members.csv",mode="a",header=False,index=True)
+            to_add.to_csv("members.csv",mode="a",header=False,index=True)
             st.success("Submitted")
             st.balloons()
