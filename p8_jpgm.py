@@ -18,7 +18,7 @@ if nav=="Members":
 elif nav=="Registration":
     st.header("Jalpaiguri Mariners")
     st.write("Registration Form")
-    first,last=st.beta_columns(2)
+    first,last=st.beta_columns(2,2)
     email,mob=st.beta_columns([2,1])
     user,pw,pw2=st.beta_columns(3)
     dob,blood,occ=st.beta_columns(3)
