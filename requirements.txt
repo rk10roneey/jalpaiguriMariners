@@ -2,3 +2,5 @@ streamlit==0.73.0
 pandas==0.25.3
 numpy==1.18.1
 scikit-learn==0.22.1
+base58
+lxml==4.5.1
