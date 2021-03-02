@@ -19,7 +19,7 @@ if nav=="Members":
 #     copy.to_csv("download.csv")
 #     st.sidebar.markdown("""
 #     [Download File]("download.csv")
-#     """)
+#     """) 
     # https://discuss.streamlit.io/t/how-to-download-file-in-streamlit/1806
     def filedownload(df):
         copy = df.to_csv(index=False)
