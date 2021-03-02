@@ -15,6 +15,12 @@ if nav=="Members":
         st.write("")
     else:
         st.table(showdata)
+         if st.button("Download File"):
+    copy=showdata
+    copy.to_csv("download.csv")
+    st.sidebar.markdown("""
+    [Example CSV input file]("download.csv")
+    """)
 elif nav=="Registration":
     st.header("Jalpaiguri Mariners")
     st.write("Registration Form")
