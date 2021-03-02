@@ -15,7 +15,6 @@ if nav=="Members":
         st.write("")
     else:
         st.table(showdata)
-         if st.button("Download File"):
     copy=showdata
     copy.to_csv("download.csv")
     st.sidebar.markdown("""
