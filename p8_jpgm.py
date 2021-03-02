@@ -26,9 +26,7 @@ if nav=="Members":
         b64 = base64.b64encode(csv.encode()).decode()  # strings <-> bytes conversions
         href = f'<a href="data:file/copy;base64,{b64}" download="jpgm.csv">Download File</a>'
         return href
-
-st.markdown(filedownload(showdata), unsafe_allow_html=True)
-    
+     st.markdown(filedownload(showdata), unsafe_allow_html=True)
 elif nav=="Registration":
     st.header("Jalpaiguri Mariners")
     st.write("Registration Form")
