@@ -22,10 +22,10 @@ if nav=="Members":
 #     """)
     # https://discuss.streamlit.io/t/how-to-download-file-in-streamlit/1806
     def filedownload(df):
-    copy = df.to_csv(index=False)
-    b64 = base64.b64encode(csv.encode()).decode()  # strings <-> bytes conversions
-    href = f'<a href="data:file/copy;base64,{b64}" download="jpgm.csv">Download File</a>'
-    return href
+        copy = df.to_csv(index=False)
+        b64 = base64.b64encode(csv.encode()).decode()  # strings <-> bytes conversions
+        href = f'<a href="data:file/copy;base64,{b64}" download="jpgm.csv">Download File</a>'
+        return href
 
 st.markdown(filedownload(showdata), unsafe_allow_html=True)
     
