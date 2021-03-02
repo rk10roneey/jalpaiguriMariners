@@ -18,7 +18,7 @@ if nav=="Members":
     copy=showdata
     copy.to_csv("download.csv")
     st.sidebar.markdown("""
-    [Example CSV input file]("download.csv")
+    [Download File]("download.csv")
     """)
 elif nav=="Registration":
     st.header("Jalpaiguri Mariners")
